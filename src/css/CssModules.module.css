@@ -1,0 +1,36 @@
+.container {
+  border: solid 2px #392eff;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  margin: 0;
+  color: #3d84a8;
+}
+
+.button {
+  background-color: #abedd8;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.button:hover {
+  background-color: #46cdcf;
+  color: #fff;
+  cursor: pointer;
+}

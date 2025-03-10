@@ -1,0 +1,39 @@
+import styled from 'styled-components';
+
+export const StyledComponents = () => {
+    return (
+        <SContainer>
+            <STitle>- styled components -</STitle>
+            <SButton>FIGHT!!</SButton>
+        </SContainer>
+    );
+};
+
+// タグに直接変数名を指定するため外部からインポートしたコンポーネントなのかStyledComponentsなのかが分かりにくいため、冒頭にSをつける等の工夫をする。
+const SContainer = styled.div`
+    border: solid 2px #392eff;
+    border-radius: 20px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`;
+
+const STitle = styled.p`
+    margin: 0;
+    color: #3d84a8;
+`;
+
+const SButton = styled.button`
+    background-color: #abedd8;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    transition: ease 0.3s;
+    &:hover {
+        background-color: #46cdcf;
+        color: #fff;
+        cursor: pointer;
+    }
+`;
